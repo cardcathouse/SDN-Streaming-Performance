@@ -65,21 +65,6 @@ def myNetwork():
     h36 = net.addHost('h36', cls=Host, ip='10.0.0.36', defaultRoute=None)
     h37 = net.addHost('h37', cls=Host, ip='10.0.0.37', defaultRoute=None)
     h38 = net.addHost('h38', cls=Host, ip='10.0.0.38', defaultRoute=None)
-    h39 = net.addHost('h39', cls=Host, ip='10.0.0.39', defaultRoute=None)
-    h40 = net.addHost('h40', cls=Host, ip='10.0.0.40', defaultRoute=None)
-    h41 = net.addHost('h41', cls=Host, ip='10.0.0.41', defaultRoute=None)
-    h42 = net.addHost('h42', cls=Host, ip='10.0.0.42', defaultRoute=None)
-    h43 = net.addHost('h43', cls=Host, ip='10.0.0.43', defaultRoute=None)
-    h44 = net.addHost('h44', cls=Host, ip='10.0.0.44', defaultRoute=None)
-    h45 = net.addHost('h45', cls=Host, ip='10.0.0.45', defaultRoute=None)
-    h46 = net.addHost('h46', cls=Host, ip='10.0.0.46', defaultRoute=None)
-    h47 = net.addHost('h47', cls=Host, ip='10.0.0.47', defaultRoute=None)
-    h48 = net.addHost('h48', cls=Host, ip='10.0.0.48', defaultRoute=None)
-    h49 = net.addHost('h49', cls=Host, ip='10.0.0.49', defaultRoute=None)
-    h50 = net.addHost('h50', cls=Host, ip='10.0.0.50', defaultRoute=None)
-    h51 = net.addHost('h51', cls=Host, ip='10.0.0.51', defaultRoute=None)
-    h52 = net.addHost('h52', cls=Host, ip='10.0.0.52', defaultRoute=None)
-    h53 = net.addHost('h53', cls=Host, ip='10.0.0.53', defaultRoute=None)
 
     info('*** Add links\n')
     net.addLink(s1, s2)
@@ -122,21 +107,7 @@ def myNetwork():
     net.addLink(s2, h36)
     net.addLink(s2, h37)
     net.addLink(s2, h38)
-    net.addLink(s2, h39)
-    net.addLink(s2, h40)
-    net.addLink(s2, h41)
-    net.addLink(s2, h42)
-    net.addLink(s2, h43)
-    net.addLink(s2, h44)
-    net.addLink(s2, h45)
-    net.addLink(s2, h46)
-    net.addLink(s2, h47)
-    net.addLink(s2, h48)
-    net.addLink(s2, h49)
-    net.addLink(s2, h50)
-    net.addLink(s2, h51)
-    net.addLink(s2, h52)
-    net.addLink(s2, h53)
+
 
     info('*** Starting network\n')
     net.build()
@@ -150,7 +121,7 @@ def myNetwork():
 
     info('*** Post configure switches and hosts\n')
 
-    myScript = "tcp_test_tasks_50h.sh"
+    myScript = "tcp_test_tasks_35h.sh"
     CLI(net, script=myScript)
     net.stop()
 

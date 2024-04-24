@@ -163,4 +163,4 @@ h42 wget http://10.0.0.1:8000/dl_test.mp4 -O "test39.mp4" &
 
 h43 echo "Starting in 5 seconds..."
 h43 sleep 5
-h43 wget http://10.0.0.1:8000/dl_test.mp4 -O "test40.mp4" &
+h43 wget http://10.0.0.1:8000/dl_test.mp4 -O "test40.mp4"
